@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascript.js"></script>
+    <title>Slideshow</title>
+</head>
+<body>
+    <main>
+        <h1>Slideshow</h1>
+        <form >
+            <table>
+                <tr>
+                    <td><label for="descricao">descrição </label></td>
+                    <td><input type="text" id="descricao" name="descricao"></td>
+                </tr>
+                <tr>
+                    <td><label for="imagem">imagem: </label></td>
+                    <td><input type="file" id="imagem" name="imagem"></td>
+                </tr>
+            </table>
+            <button onclick="cadastrar(slides)">enviar</button>      
+        </form>
+        <button onclick="atualizar(slides)">Atualizar</button>
+        <section id="slides">
+            <button>Anterior</button>
+            <label for="slideAtual">Exibindo</label>
+            <input type="number" min="0" max="" id="slideAtual" name="slideAtual"><b id="slideTotal">/0</b>
+            <button>Proximo</button>
+        </section>
+    </main>
+</body>
+</html>
